@@ -205,7 +205,7 @@ def getRandomImage(path):
     image_name = file_names[random_file_index]
     return cv2.imread(file_path+"/"+image_name)    
 
-for i in range(0,5):
+for i in range(0,3):
     input_im = getRandomImage("images/test/")
     input_original = input_im.copy()
     input_original = cv2.resize(input_original, None, fx=0.5, fy=0.5, interpolation = cv2.INTER_LINEAR)
